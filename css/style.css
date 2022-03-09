@@ -31,6 +31,10 @@ html {
     width: 15%;
 }
 
+.width-30 {
+    width: 30%;
+}
+
 .width-70 {
     width: 70%;
 }
@@ -40,8 +44,12 @@ a {
 }
 
 p {
-    line-height: 1.8em;
-    font-weight: 600;
+    line-height: 1.6em;
+    
+}
+
+img {
+    width: 100%;
 }
 
 /* UL */
@@ -115,15 +123,62 @@ img.logo {
     width: 45%;
     min-width: 400px;
     text-align: center;
+    color: #ffffff;
 }
 
 .jumbo-title {
-    margin-bottom: .8em;
+    margin-bottom: .7em;
     font-size: 3em;
-    color: #ffffff;
 }
 
 .jumbo-content p {
-    color: #ffffff;
-    margin-bottom: 2em;
+    margin-bottom: 2.4em;
+    font-weight: 600;
 }
+
+.col h2 {
+    font-size: 2.5em;
+    color: #23272a;
+    margin-bottom: .8em;
+}
+
+.width-70:first-child {
+    padding-right: 6em;
+}
+
+section.advantages {
+    /* padding: 0 6em; */
+    /* margin-top: 8em; */
+}
+
+.width-70:nth-child(2) {
+    padding-left: 6em;
+}
+
+.box {
+    margin: 10em 0;
+}
+.box-bg {
+    padding: 8em 0;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.box.even::before {
+    content: url(../img/wave.svg);
+    display: block;
+    margin-bottom: -4px;
+    opacity: 5%;
+}
+
+.box.even::after {
+    content: url(../img/wave.svg);
+    display: block;
+    margin-top: -4px;
+    opacity: 5%;
+    transform: rotate(180deg);
+}
+
+/* .content-box {
+    height: 300px;
+    
+} */
