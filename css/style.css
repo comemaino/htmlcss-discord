@@ -6,8 +6,8 @@
 }
 
 html {
-    font-size: 75%;
-    font-family: "Whitney", sans-serif;
+    font-size: 80%;
+    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -39,13 +39,18 @@ html {
     width: 70%;
 }
 
+.padding-3-0 {
+    padding: 3em 0;
+}
+
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 p {
     line-height: 1.6em;
-    
+    font-weight: 600;   
 }
 
 img {
@@ -65,7 +70,6 @@ nav ul li {
 nav a {
     font-size: .9em;
     font-weight: 700;
-    color: #ffffff;
 }
 
 /* BUTTONS */
@@ -76,12 +80,12 @@ nav a {
 }
 
 .small-btn {
-    padding: .75em 1em;
+    padding: .6em 1em;
     border-radius: 1.5em;
 }
 
 .large-btn {
-    padding: 1em 1.75em;
+    padding: .8em 1.75em;
     border-radius: 1.5em;
 }
 
@@ -92,7 +96,7 @@ nav a {
 
 .color-btn {
     color: #ffffff;
-    background-color: rgb(148, 163, 245);
+    background-color: #94a3f5;
 }
 
 .dark-btn {
@@ -116,6 +120,7 @@ img.logo {
     width: 100px;
 }
 
+/* JUMBOTRON */
 .jumbotron {
     height: 350px;
     background-image: url(../img/jumbo.png);
@@ -141,28 +146,31 @@ img.logo {
     font-weight: 600;
 }
 
+/* MAIN */
 h2 {
-    font-size: 2.5em;
-    color: #23272a;
     margin-bottom: .8em;
+    line-height: 1.2em;
+    font-size: 2em;
+    color: #23272a;
 }
 
 .col p {
     color: #23272a;
 }
 
-.width-70:first-child {
+main .width-70:first-child {
     padding-right: 6em;
 }
 
-
-.width-70:nth-child(2) {
+main .width-70:nth-child(2) {
     padding-left: 6em;
 }
 
+/* BACKGROUND */
 .box {
-    margin: 8em 0;
+    margin-top: 6em;
 }
+
 .box-bg {
     padding: 8em 0;
     background-color: rgba(0, 0, 0, .05);
@@ -184,6 +192,7 @@ h2 {
     transform: rotate(180deg);
 }
 
+/* SECTION-04 */
 .box.last {
     text-align: center;
     color: #23272a;
@@ -197,4 +206,50 @@ h2 {
     background-image: url(../img/stars.svg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* FOOTER */
+footer {
+    background-color: #23272a;
+}
+
+footer .width-30>* {
+    margin-bottom: 1.2em;
+
+}
+
+footer h3 {
+    font-size: 1.5em;
+    color: #94a3f5;
+}
+
+.col-lang {
+    width: calc(25% - 2em);
+    margin-right: 2em;
+}
+
+.icons i {
+    margin-right: 1em;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+/* LISTS */
+.col-links {
+    width: 75%;
+}
+.links ul {
+    display: inline-block;
+    padding: 0 1em;
+    vertical-align: top;
+    width: 24%;
+}
+
+li.ul-title {
+    color: #94a3f5;
+}
+
+.links li {
+    line-height: 2em;
+    font-weight: 600;
 }
