@@ -90,6 +90,11 @@ nav a {
     background-color: #ffffff;
 }
 
+.color-btn {
+    color: #ffffff;
+    background-color: rgb(148, 163, 245);
+}
+
 .dark-btn {
     color: #ffffff;
     background-color: #23272a;
@@ -136,34 +141,35 @@ img.logo {
     font-weight: 600;
 }
 
-.col h2 {
+h2 {
     font-size: 2.5em;
     color: #23272a;
     margin-bottom: .8em;
+}
+
+.col p {
+    color: #23272a;
 }
 
 .width-70:first-child {
     padding-right: 6em;
 }
 
-section.advantages {
-    /* padding: 0 6em; */
-    /* margin-top: 8em; */
-}
 
 .width-70:nth-child(2) {
     padding-left: 6em;
 }
 
 .box {
-    margin: 10em 0;
+    margin: 8em 0;
 }
 .box-bg {
     padding: 8em 0;
     background-color: rgba(0, 0, 0, .05);
 }
 
-.box.even::before {
+.box.even::before,
+.box.last::before {
     content: url(../img/wave.svg);
     display: block;
     margin-bottom: -4px;
@@ -178,7 +184,17 @@ section.advantages {
     transform: rotate(180deg);
 }
 
-/* .content-box {
-    height: 300px;
-    
-} */
+.box.last {
+    text-align: center;
+    color: #23272a;
+}
+
+.box.last span {
+    padding: 1.5em;
+    line-height: 5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
